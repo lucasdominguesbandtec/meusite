@@ -72,6 +72,10 @@ background-repeat: no-repeat;
     color: white;
 
 }
+.all #div_mensagem{
+    font-size: 20px;
+
+}
 
 .tabela img{
     width: 50vw;
