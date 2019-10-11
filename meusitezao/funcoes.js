@@ -2,15 +2,13 @@ function validar(){
     var valor_email = email.value;
     var valor_senha = senha.value;
     var valor_confirmacao = confirmacao.value;
-
-    console.log(valor_email)
+    var time_coracao = times2.value;
     if(valor_email.indexOf('@') != -1 && valor_senha=='futebol' && valor_confirmacao==valor_senha){
         div_mensagem.innerHTML = 'Usuário autenticado';
-        console.log("tttttttt")
+        fotofundo.src= `${time_coracao}.jpg`;
     }
     else{
         div_mensagem1.innerHTML = 'Falha na autentificação';
-        console.log("yytytyt")
     }
 
 } 
