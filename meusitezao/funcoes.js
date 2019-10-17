@@ -4,18 +4,18 @@ function validar(){
     var valor_confirmacao = confirmacao.value;
     var valor_select = times2.value;
     if(valor_email.indexOf('@') != -1 && valor_senha=='futebol' && valor_confirmacao==valor_senha){
-        div_mensagem.innerHTML = 'Usuário autenticado';
+         div_mensagem = 'Usuário autenticado';
         if(valor_select == "saopaulo"){
-            fotofundo.src = "./tricolor.svg";
+            fotofundo.src = "./saopaulu.jpg";
         }
         if(valor_select == "curintias"){
-            fotofundo.src = "./gamba.png";
+            fotofundo.src = "./corinthians.jpeg";
         }
         if(valor_select == "santus"){
-            fotofundo.src = "./santos.png";
+            fotofundo.src = "./santus.png";
         }
         if(valor_select == "sem_mundial"){
-            fotofundo.src = "palmeiras.png";
+            fotofundo.src = "palmeirass.jpg";
         }
     }
     else{
