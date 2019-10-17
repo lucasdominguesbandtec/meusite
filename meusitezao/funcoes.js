@@ -7,9 +7,15 @@ function validar(){
         div_mensagem.innerHTML = 'Usuário autenticado';
         if(valor_select == "saopaulo"){
             fotofundo.src = "./tricolor.svg";
-            if(valor_select == "curintias"){
-                fotofundo.src = "./gamba.png";
-            }
+        }
+        if(valor_select == "curintias"){
+            fotofundo.src = "./gamba.png";
+        }
+        if(valor_select == "santus"){
+            fotofundo.src = "./santos.png";
+        }
+        if(valor_select == "sem_mundial"){
+            fotofundo.src = "palmeiras.png";
         }
     }
     else{
