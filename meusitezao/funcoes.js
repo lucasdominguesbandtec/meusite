@@ -25,12 +25,13 @@ function cadastrar(){
 } 
 
 function validar(){
+    mensa.innerHTML = '';
     var valor_email1 = email1.value;
     var valor_senha1 = senha1.value;
     if(valor_email1.indexOf('@') != -1 && valor_senha1 =='futebol'){
         alert('Bem vindo');
     }
     else{
-        div_mensagem1.innerHTML = 'Falha na autentificação';
+        mensa.innerHTML = 'Falha na autentificação';
     }
 }
