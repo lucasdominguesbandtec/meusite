@@ -1,10 +1,10 @@
-function validar(){
+function cadastrar(){
     var valor_email = email.value;
     var valor_senha = senha.value;
     var valor_confirmacao = confirmacao.value;
     var valor_select = times2.value;
     if(valor_email.indexOf('@') != -1 && valor_senha=='futebol' && valor_confirmacao==valor_senha){
-         div_mensagem = 'Usuário autenticado';
+         alert('Usuário autenticado');
         if(valor_select == "saopaulo"){
             fotofundo.src = "./saopaulu.jpg";
         }
@@ -23,3 +23,14 @@ function validar(){
     }
 
 } 
+
+function validar(){
+    var valor_email1 = email1.value;
+    var valor_senha1 = senha1.value;
+    if(valor_email1.indexOf('@') != -1 && valor_senha1 =='futebol'){
+        alert('Bem vindo');
+    }
+    else{
+        div_mensagem1.innerHTML = 'Falha na autentificação';
+    }
+}

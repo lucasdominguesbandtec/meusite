@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style_cadastro.css">
+    <script src="funcoes.js"></script>
     <title>Login</title>
 </head>
 <body>
-    <div img src="download.jpg" alt="" id="fotolog"></div>
+        <div class="menu1">
+                <nav>
+                    <ul>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="">O melhor time é o seu </a></li>
+                        <li><a href="">Campeonatos</a></li>
+                        <li><a href="">Noticias</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <div class="fotolog">
+        <img src="" alt="">    
+    </div>
+    <div class="text1">FutTorcedor</div><br>
+
     <div class="log">
-        <input id="email" placeholder="Informe seu e-mail..."><br>
-        <input id="senha" type="password" placeholder="Informe sua senha...">
+        <div class="text">Fazer login</div>
+        <input id="email1" placeholder="Informe seu e-mail..."><br>
+        <input id="senha1" type="password" placeholder="Informe sua senha..."><br>
+        <button onclick="validar()" class="botao1">Entrar</button>
+        <li><a class="esqueceu" href="cadastro.html">Esqueceu sua senha?</a></li>
     </div>    
+
 </body>
 </html>
