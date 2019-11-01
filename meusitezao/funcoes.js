@@ -18,7 +18,6 @@ function validar(){
     mensa.innerHTML = '';
     var valor_email1 = email1.value;
     var valor_senha1 = senha1.value;
-    var valor_select = times2.value;
     if(valor_email1.indexOf('@') != -1 && valor_senha1 =='futebol'){
         alert('Bem vindo');
         if(valor_select == "saopaulo"){
@@ -36,5 +35,21 @@ function validar(){
     }
     else{
         mensa.innerHTML = 'Falha na autentificação';
+    }
+}
+
+function ver() {
+    var valor_select = times2.value;
+    if(valor_select == "saopaulo"){
+        fotomel.src = "saopaulu.jpg";
+    }
+    if(valor_select == "curintias"){
+        fotomel.src = "corinthians.jpeg";
+    }
+    if(valor_select == "santus"){
+        fotomel.src = "santus.png";
+    } 
+    if(valor_select == "sem_mundial"){
+        fotomel.src = "palmeirass.jpg";
     }
 }
