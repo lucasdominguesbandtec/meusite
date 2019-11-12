@@ -19,19 +19,8 @@ function validar(){
     var valor_email1 = email1.value;
     var valor_senha1 = senha1.value;
     if(valor_email1.indexOf('@') != -1 && valor_senha1 =='futebol'){
+        window.location.href = "melhor.html";
         alert('Bem vindo');
-        if(valor_select == "saopaulo"){
-            fotolog.src = "saopaulu.jpg";
-        }
-        if(valor_select == "curintias"){
-            fotolog.src = "corinthians.jpeg";
-        }
-        if(valor_select == "santus"){
-            fotolog.src = "santus.png";
-        } 
-        if(valor_select == "sem_mundial"){
-            fotolog.src = "palmeirass.jpg";
-        }
     }
     else{
         mensa.innerHTML = 'Falha na autentificação';

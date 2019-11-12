@@ -52,8 +52,10 @@ height: 50vw;
     justify-content: space-between;
     padding: 10px;
 }
-.menu nav ul li{
-   list-style: none;
+.menu nav ul li a:hover{
+    list-style: none;
+    color: yellow;
+    transition: .2 ease-in-out;
 }
 .menu {
     width: 100vw;
@@ -237,7 +239,7 @@ height: 50vw;
     margin-top: 1%;
     border:3px;
     padding: 10px;
-    margin-left: 475px;
+    margin-left: 200px;
     margin-top: 90px;
     color: white;
     border-radius: 10px;
