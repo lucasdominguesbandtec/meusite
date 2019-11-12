@@ -31,6 +31,7 @@ function ver() {
     var valor_select = times2.value;
     if(valor_select == "saopaulo"){
         fotomel.src = "saopaulu.jpg";
+        ge.src="cola.png";
     }
     if(valor_select == "curintias"){
         fotomel.src = "corinthians.jpeg";
