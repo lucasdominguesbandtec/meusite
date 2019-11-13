@@ -125,6 +125,7 @@ height: 50vw;
 }
 
 .menu1 nav .seloc{
+    text-decoration: none;
     font-size: 30px;
     color: white;
     font-family:monospace;
@@ -166,8 +167,8 @@ height: 50vw;
     margin-top: 1%;
     border:3px;
     padding: 10px;
-    margin-left: 475px;
-    margin-top: 90px;
+    margin-left: 460px;
+    margin-top: 80px;
     color: white;
     border-radius: 10px;
 }
@@ -238,8 +239,15 @@ height: 50vw;
 }
 .menu2 {
     width: 100vw;
-   background-color: black;
-    
+   background-color: black; 
+}
+.menu2 nav .seloco{
+    list-style: none;
+    width: 50vw;
+    display:flex;
+    margin: 0px auto; 
+    justify-content: space-between;
+    padding: 10px;
 }
 .menu2 nav ul li a{
     color: aliceblue;
@@ -330,6 +338,23 @@ height: 50vw;
     }
     
     #ge{
-        margin-left: 770px;
-        width:40vw;
+        margin-left: 800px;
+        width:30vw;
+        margin-top: -70px;
+    }
+
+    li{
+        list-style: none;
+    }
+    .esqueceu{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        font-family: 'Lucida Sans';
+    }
+    footer{
+        text-align: center;
+        padding: 10px;
+        background-color: #4d4d4d;
+        color: #f1f1f1;
     }
