@@ -28,10 +28,11 @@ function validar(){
 }
 
 function ver() {
+    adele.style.display = 'block';
     var valor_select = times2.value;
     if(valor_select == "saopaulo"){
-        fotomel.src = "saopaulu.jpg";
-        ge.src="cola.png";
+        fotomel.src = "po.jpg";
+        adele.innerHTML += 'Possui 3 Mundiais<br>3 Libertadores<br>6 Brasileirão<br>22 Paulistões<br> 1 Sul-americana <br> E NUNCA FOI REBAIXADO'
     }
     if(valor_select == "curintias"){
         fotomel.src = "corinthians.jpeg";
@@ -42,4 +43,5 @@ function ver() {
     if(valor_select == "sem_mundial"){
         fotomel.src = "palmeirass.jpg";
     }
+
 }
