@@ -1,0 +1,244 @@
+*{margin: 0;
+ padding: 0;}
+
+ .menu3 nav ul{
+    width: 50vw;
+    display:flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+.menu3 nav ul li a:hover{
+   list-style: none;
+   color: yellow;
+   transition: .2 ease-in-out;
+}
+.menu3 {
+    width: 100vw;
+   background-color: black; 
+}
+.menu3 nav{
+    width: 50vw;
+    display:flex;
+    margin: 0px auto; 
+    padding: 10px;
+}
+
+li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+}
+
+.fotcamp {
+    background-image: url(campioes.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1000;
+    width: 100vw;
+    height: 50vw;
+    }
+    .comentarios{
+        display: flex;
+        margin-top: 110vh;
+        margin-left: 160px;
+        flex-direction: column;
+        }
+    
+        
+        .comentarios h1{
+            width: 90%;
+            float: left;
+            text-align: center;
+        }
+        
+        
+        .comentarios li{
+            display: inline-block;
+            padding: 40px; 
+        }
+        
+        .comentarios ul{
+            margin-left: -5%;
+            text-align: center;
+            display: flex;
+        }
+        
+        .comentarios img{
+            width: 100px;
+            height: 100px;
+            padding-bottom: 10px;
+        }
+        
+        .comentarios h3{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans';
+        }
+    
+        .comentarios p{
+            font-family: 'Lucida Sans';
+            font-size: 15px;
+        }
+        
+        #section_02 {
+            padding-right: 5px;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #4d4d4d;
+            color: #f1f1f1;
+        }
+        html{
+            overflow-x: hidden;
+        }
+
+        #bot3{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 10px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 30px; 
+        }
+  
+        #bot2:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }
+
+        #bot4{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 850px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 10px; 
+        }
+  
+        #bot4:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }
+        
+        #bot5{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 850px;
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 110px; 
+        }
+  
+        #bot5:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }
+
+        #bot6{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 110px; 
+        }
+  
+        #bot6:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }
+
+        #bot7{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 240px; 
+        }
+  
+        #bot7:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }
+       
+        #bot8{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 850px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 215px; 
+        }
+  
+        #bot8:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }
+
+        #bot9{
+            margin-right: 150px;
+            border-radius: 5px;
+            position: absolute;
+            right: 400px;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            background: rgba(241, 245, 247, 0.664);
+            font-family: 'Lucida Sans';
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.829);
+            transition-delay: 0.3;
+            transition:ease-in-out;
+            margin-top: 140px; 
+        }
+  
+        #bot9:hover{
+            background-color: rgba(5, 25, 139, 0.829);
+        }

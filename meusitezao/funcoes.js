@@ -54,16 +54,16 @@ function escalacao(){
     ge.innerHTML = '';
     var valor_select = times2.value;
     if(valor_select == "saopaulo"){
-        ge.src = "diniz.jpg";
+        ge.src = "escalacaosp.jpg";
     }
     if(valor_select == "curintias"){
-        ge.src = "carille.jpg";
+        ge.src = "escalacaocor.webp";
     }
     if(valor_select == "santus"){
         ge.src = "sampaoli.jpg";
     } 
     if(valor_select == "sem_mundial"){
-        ge.src = "menezes.jpg";
+        ge.src = "escalacaopal.jpg";
     }
 
 }
