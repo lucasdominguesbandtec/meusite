@@ -33,17 +33,37 @@ function ver() {
     var valor_select = times2.value;
     if(valor_select == "saopaulo"){
         fotomel.src = "po.jpg";
-        adele.innerHTML += 'Possui 3 Mundiais<br>3 Libertadores<br>6 Brasileirão<br>22 Paulistões<br> 1 Sul-americana <br> E NUNCA FOI REBAIXADO'
+        adele.innerHTML += 'Possui:<br> 3 Mundiais<br>3 Libertadores<br>6 Brasileirão<br>21 Paulistões<br> 1 Sul-americana <br> E NUNCA FOI REBAIXADO'
     }
     if(valor_select == "curintias"){
         fotomel.src = "corinthians.jpeg";
-        adele.innerHTML += 'Possui 2 Mundiais<br>1 Libertadores<br>7 Brasileirão<br>30 Paulistões<br>3 Copa do Brasil';
+        adele.innerHTML += 'Possui:<br> 2 Mundiais<br>1 Libertadores<br>7 Brasileirão<br>30 Paulistões<br>3 Copa do Brasil';
     }
     if(valor_select == "santus"){
         fotomel.src = "santus.png";
+        adele.innerHTML += 'Possui:<br> 2 Mundiais<br>3 Libertadores<br>8 Brasileirão<br>22 Paulistões<br>1 Copa do Brasil<br> NUNCA FOI REBAIXADO';
     } 
     if(valor_select == "sem_mundial"){
         fotomel.src = "palmeirass.jpg";
+        adele.innerHTML += 'Possui:<br> 1 Mundial<br> 1 Libertadores<br>10 Brasileirão<br>22 Paulistões<br>3 Copa do Brasil';
+    }
+
+}
+
+function escalacao(){
+    ge.innerHTML = '';
+    var valor_select = times2.value;
+    if(valor_select == "saopaulo"){
+        ge.src = "diniz.jpg";
+    }
+    if(valor_select == "curintias"){
+        ge.src = "carille.jpg";
+    }
+    if(valor_select == "santus"){
+        ge.src = "sampaoli.jpg";
+    } 
+    if(valor_select == "sem_mundial"){
+        ge.src = "menezes.jpg";
     }
 
 }
