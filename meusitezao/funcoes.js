@@ -29,6 +29,7 @@ function validar(){
 
 function ver() {
     adele.style.display = 'block';
+    adele.innerHTML = '';
     var valor_select = times2.value;
     if(valor_select == "saopaulo"){
         fotomel.src = "po.jpg";
@@ -36,6 +37,7 @@ function ver() {
     }
     if(valor_select == "curintias"){
         fotomel.src = "corinthians.jpeg";
+        adele.innerHTML += 'Possui 2 Mundiais<br>1 Libertadores<br>7 Brasileirão<br>30 Paulistões<br>3 Copa do Brasil';
     }
     if(valor_select == "santus"){
         fotomel.src = "santus.png";
