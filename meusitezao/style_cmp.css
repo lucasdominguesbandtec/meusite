@@ -42,7 +42,7 @@ li a{
     }
     .comentarios{
         display: flex;
-        margin-top: 110vh;
+        margin-top: 95vh;
         margin-left: 160px;
         flex-direction: column;
         }
@@ -113,7 +113,7 @@ li a{
             margin-top: 30px; 
         }
   
-        #bot2:hover{
+        #bot3:hover{
             background-color: rgba(5, 25, 139, 0.829);
         }
 
@@ -226,7 +226,7 @@ li a{
             margin-right: 150px;
             border-radius: 5px;
             position: absolute;
-            right: 400px;
+            right: 850px;
             width: 200px;
             height: 40px;
             font-size: 16px;
@@ -236,9 +236,15 @@ li a{
             color: rgba(0, 0, 0, 0.829);
             transition-delay: 0.3;
             transition:ease-in-out;
-            margin-top: 140px; 
+            margin-top: 340px; 
         }
   
         #bot9:hover{
             background-color: rgba(5, 25, 139, 0.829);
+        }
+
+        #imagem{
+            width: 600px;
+            margin-left: 375px;
+            margin-top: -80px;
         }
