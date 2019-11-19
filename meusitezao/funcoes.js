@@ -67,3 +67,15 @@ function escalacao(){
     }
 
 }
+
+var Sequelize = require('sequelize')
+var sequelize = new Sequelize('meubd','root', 'bandtec', {
+  host: "localhost",
+  dialect: 'mysql'
+})
+
+sequelize.authenticate().then(function(){
+  console.log("Conectado com sucesso!!")
+}).catch(function(erro){
+  console.log("Falha ao se conectar"+erro)
+})
