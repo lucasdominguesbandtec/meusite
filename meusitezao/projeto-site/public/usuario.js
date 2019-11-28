@@ -7,11 +7,12 @@ module.exports = (sequelize, DataTypes) => {
     autoIncrement: true
   },		
   nome: {
+    field: 'nome',
     type: DataTypes.STRING,
     allowNull: false
   },
-  senha: {
-    field: 'Senha',
+  cpf: {
+    field: 'cpf',
     type: DataTypes.STRING,
     allowNull: false
   },
@@ -19,10 +20,15 @@ module.exports = (sequelize, DataTypes) => {
     field: 'Email',
     type: DataTypes.STRING,
     allowNull: false
+  },
+  senha: {
+    field: 'Senha',
+    type: DataTypes.STRING,
+    allowNull: false
   }
-}, 
+},
 {
-  tableName: 'Nome', 
+  tableName: 'TB_Cadastro', 
   freezeTableName: true, 
   underscored: true,
   timestamps: false,

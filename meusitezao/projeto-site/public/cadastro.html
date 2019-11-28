@@ -20,21 +20,23 @@
         </nav>
     </div>
     <div class="texto1">FutTorcedor</div><br>
+<form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
     <div class="all">
         <div class="time2"> 
         <div class="texto2">Cadastro</div>
-    <input id="nome" placeholder="Informe seu nome completo..."><br>
-    <input id="cpf" placeholder="Informe seu CPF"><br>
-    <input id="email" placeholder="Informe seu e-mail..."><br>
-    <input id="senha" type="password" placeholder="Informe sua senha..."><br>
+    <input name="nome" id="nome" placeholder="Informe seu nome completo..."><br>
+    <input name="cpf" id="cpf" placeholder="Informe seu CPF"><br>
+    <input name="email" id="email" placeholder="Informe seu e-mail..."><br>
+    <input name="senha" id="senha" type="password" placeholder="Informe sua senha..."><br>
     <input id="confirmacao" type="password" placeholder="Confirme sua senha..."><br>
             
             <span id="div_mensagem1" style=color:red></span>           
     </div>
 
-    <button onclick="cadastrar()" class="botao">Cadastrar</button>
+    <button class="botao">Cadastrar</button>
     </div>
+</form>
     
     <div class="tabela">
         <img src="logo.jpg"></img>
@@ -91,3 +93,22 @@
         </footer>
 </body>
 </html>
+<script>
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response){
+            if(response.ok){
+            console.log("cadastrou");
+            window.location.href='login.html';
+            }else{
+                console.log('Errou ao cadastrar!');
+                response.text().then(function(resposta){
+                })
+            }
+        });
+        return false;
+    }
+</script>

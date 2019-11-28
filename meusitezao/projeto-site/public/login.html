@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style_cadastro.css">
-    <script src="funcoes.js"></script>
+    <!-- <script src="funcoes.js"></script> -->
     <title>Login</title>
 </head>
 <body>
@@ -21,16 +21,54 @@
     <div>
         <img id="fotolog"src="" alt="">    
     </div>
-
+    <form  class="center container" id="form_login" method="post" onsubmit="return entrar()">
     <div class="log">
         <div class="text">Fazer login</div>
-        <input id="email1" placeholder="Informe seu e-mail..."><br>
-        <input id="senha1" type="password" placeholder="Informe sua senha..."><br>
+        <input name="email" id="email1" placeholder="Informe seu e-mail..."><br>
+        <input name="senha"id="senha1" type="password" placeholder="Informe sua senha..."><br>
         <input id="timecoracao" type="password" placeholder="Informe seu time do coração"><br>
-        <button onclick="validar()" class="botao1">Entrar</button>
+        <button class="botao1">Entrar</button>
         <li><a class="esqueceu" href="cadastro.html">Esqueceu sua senha?</a></li>
         <span id="mensa" style="color:red" ></span>
     </div>    
-
+</form>
 </body>
 </html>
+
+<script>
+
+    function entrar() {
+            
+            var formulario = new URLSearchParams(new FormData(form_login));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
+                
+                if (resposta.ok) {
+    
+                    resposta.json().then(json => {
+    
+                        sessionStorage.login_usuario_meuapp = json.email;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
+                        
+                        window.location.href = 'melhor.html';
+                    });
+    
+                } else {
+    
+                    console.log('Erro de login!');
+    
+
+    
+                    response.text().then(texto => {
+                        console.error(texto);
+                        
+                    });
+                }
+            });
+    
+            return false;
+        }
+    
+    </script>
